@@ -40,7 +40,7 @@ Automatic Speech Recognition (ASR) systems often struggle with transcribing spee
 | [**8**](https://huggingface.co/rishabhjain16/whisper_medium_en_to_myst_pf) | Medium.en | 12.33 | 3.32 | **15.08** | **4.88** |
 | [**9**](https://huggingface.co/rishabhjain16/whisper_large_v2_to_myst_pf) | Large-V2 | 13.34 | 4.17 | 17.11 | 4.97 |
 
-**NOTE:** Model IDs are links to the corresponding models on our HuggingFace page. The models are openly available.<br /><br />
+**NOTE:** Model IDs are links to the corresponding models on our HuggingFace page. The models are openly available.<br />
 
 **DISCLAIMER:** The child audio datasets used in this paper are subject to licensing agreements, therefore we cannot make them publicly available. For researchers wishing to recreate our experiments, please purchase the licenses required for the original datasets from the publishers and upon providing proof of license, we can share our preprocessed versions.
 
