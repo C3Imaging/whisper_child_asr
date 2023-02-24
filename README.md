@@ -25,7 +25,9 @@ Automatic Speech Recognition (ASR) systems often struggle with transcribing spee
 
 ### Table 3: WER on child speech (MyST, PFSTAR and CMU-Kids) and adult speech (dev-clean) test tests for different Whisper models finetuned on MyST, PFSTAR and MyST+PFSTAR-combined datasets.
 
-**NOTE:** Model IDs are links to the corresponding models on our HuggingFace page. The models are openly available.<br />
+**NOTE1:** Model IDs are links to the corresponding models on our HuggingFace page. The models are openly available.<br />
+
+**NOTE2:** A Tensorboard page of all the training and evaluation metrics for each model can be found under the "Training metrics" tab after clicking on a model link.<br />
 
 **DISCLAIMER:** The child audio datasets used in this paper are subject to licensing agreements, therefore we cannot make them publicly available. For researchers wishing to recreate our experiments, please purchase the licenses required for the original datasets from the publishers and upon providing proof of license, we can share our preprocessed versions.
 
