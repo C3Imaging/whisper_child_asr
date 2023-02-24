@@ -21,6 +21,23 @@ Automatic Speech Recognition (ASR) systems often struggle with transcribing spee
 | [**Large**](https://huggingface.co/openai/whisper-large) | 1550M | 25.24 | 84.52 | 13.7 | 5.53 |
 | [**Large-V2**](https://huggingface.co/openai/whisper-large-v2) | 1550M | **25.0** | 73.68 | 12.69 | **5.4** |
 
+**NOTE:** Model names are links to the corresponding models on OpenAI's HuggingFace page. The models are openly available.
 
-	
- 
+### Table 3: WER on child speech (MyST, PFSTAR and CMU-Kids) and adult speech (dev-clean) test tests for different Whisper models finetuned on MyST, PFSTAR and MyST+PFSTAR-combined datasets.
+
+| **Model ID**   | **Whisper Pretraining Model** | **WER MyST_test** | **WER PFS_test** | **WER CMU_test** | **WER dev-clean** |
+| :---    | :------: | :------: | :------: | :------: | :------: |
+| MyST (55 Hours) Finetuning: |
+| [**1**](https://huggingface.co/rishabhjain16/whisper_medium_to_myst55h) | Medium | **11.66** | 19.76 | 16.84 | 5.62 |
+| [**2**](https://huggingface.co/rishabhjain16/whisper_medium_en_to_myst55h) | Medium.en | 11.81 | 17.83 | **15.07** | 6.48 |
+| [**3**](https://huggingface.co/rishabhjain16/whisper_large_v2_to_myst55h) | Large-V2 | 12.28 | **10.88** | 15.67 | **4.82** |
+| PFSTAR (10 Hours) Finetuning: |
+| [**4**](https://huggingface.co/rishabhjain16/whisper_medium_to_pf10h) | Medium | 16.18 | 3.15 | 16.57 | 5.33 |
+| [**5**](https://huggingface.co/rishabhjain16/whisper_medium_en_to_pf10h) | Medium.en | 15.84 | 3.14 | 15.53 | 5.28 |
+| [**6**](https://huggingface.co/rishabhjain16/whisper_large_v2_to_pf10h) | Large-V2 | **15.79** | **2.88** | **15.22** | **5.10** |
+| MyST (55 Hours) + PFSTAR (10 Hours) Finetuning: |
+| [**7**](https://huggingface.co/rishabhjain16/whisper_medium_to_myst_pf) | Medium | **12.22** | **2.98** | 16.05 | 5.4 |
+| [**8**](https://huggingface.co/rishabhjain16/whisper_medium_en_to_myst_pf) | Medium.en | 12.33 | 3.32 | **15.08** | **4.88** |
+| [**9**](https://huggingface.co/rishabhjain16/whisper_large_v2_to_myst_pf) | Large-V2 | 13.34 | 4.17 | 17.11 | 4.97 |
+
+  
