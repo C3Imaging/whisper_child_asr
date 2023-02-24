@@ -8,6 +8,8 @@ Automatic Speech Recognition (ASR) systems often struggle with transcribing spee
 
 ### Table 2: WER for different Whisper models on child speech (MyST, PFSTAR and CMU-Kids) and adult speech (dev-clean) datasets
 
+**NOTE:** Model names are links to the corresponding models on OpenAI's HuggingFace page. The models are openly available.
+
 | **Model Name**   | **Parameters** | **WER MyST_test** | **WER PFS_test** | **WER CMU_test** | **WER dev-clean** |
 | :---    | :------: | :------: | :------: | :------: | :------: |
 | [**Tiny**](https://huggingface.co/openai/whisper-tiny) | 39M | 40.09 | 159.57 | 30.63 | 10.85 |
@@ -21,9 +23,11 @@ Automatic Speech Recognition (ASR) systems often struggle with transcribing spee
 | [**Large**](https://huggingface.co/openai/whisper-large) | 1550M | 25.24 | 84.52 | 13.7 | 5.53 |
 | [**Large-V2**](https://huggingface.co/openai/whisper-large-v2) | 1550M | **25.0** | 73.68 | 12.69 | **5.4** |
 
-**NOTE:** Model names are links to the corresponding models on OpenAI's HuggingFace page. The models are openly available.
-
 ### Table 3: WER on child speech (MyST, PFSTAR and CMU-Kids) and adult speech (dev-clean) test tests for different Whisper models finetuned on MyST, PFSTAR and MyST+PFSTAR-combined datasets.
+
+**NOTE:** Model IDs are links to the corresponding models on our HuggingFace page. The models are openly available.<br />
+
+**DISCLAIMER:** The child audio datasets used in this paper are subject to licensing agreements, therefore we cannot make them publicly available. For researchers wishing to recreate our experiments, please purchase the licenses required for the original datasets from the publishers and upon providing proof of license, we can share our preprocessed versions.
 
 | **Model ID**   | **Whisper Pretraining Model** | **WER MyST_test** | **WER PFS_test** | **WER CMU_test** | **WER dev-clean** |
 | :---    | :------: | :------: | :------: | :------: | :------: |
@@ -40,8 +44,12 @@ Automatic Speech Recognition (ASR) systems often struggle with transcribing spee
 | [**8**](https://huggingface.co/rishabhjain16/whisper_medium_en_to_myst_pf) | Medium.en | 12.33 | 3.32 | **15.08** | **4.88** |
 | [**9**](https://huggingface.co/rishabhjain16/whisper_large_v2_to_myst_pf) | Large-V2 | 13.34 | 4.17 | 17.11 | 4.97 |
 
-**NOTE:** Model IDs are links to the corresponding models on our HuggingFace page. The models are openly available.<br />
+**Training Hyperparameters:** (common used for all finetuning experiments)
+- Learning Rate: 1e-05
+- Optimizer: Adam with betas=(0.9,0.999) and epsilon=1e-08
+- Learning rate scheduler type: Linear
+- Learning rate scheduler warmup steps: 500
+- Training steps: 4000
 
-**DISCLAIMER:** The child audio datasets used in this paper are subject to licensing agreements, therefore we cannot make them publicly available. For researchers wishing to recreate our experiments, please purchase the licenses required for the original datasets from the publishers and upon providing proof of license, we can share our preprocessed versions.
 
   
