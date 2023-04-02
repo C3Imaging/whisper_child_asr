@@ -4,6 +4,10 @@
 
 Automatic Speech Recognition (ASR) systems often struggle with transcribing speech from children because there is a lack of large children's speech datasets available to accurately train child-friendly ASR models. In this work, we explore the use of the robust large-scale supervised ‘Whisper’ models to improve the ASR accuracy of child. We evaluate different whisper models on different publicly available child-speech datasets. We also explore further finetuning on whisper with child speech with the goal of improving the ASR accuracy. Finally, we compare our results with the State-of-the-Art (SOTA) self-supervised ‘Wav2vec2’ method on same datasets. Our experiments show how whisper finetuning can be the key to improving ASR accuracy for child speech.
 
+## Disclaimer
+
+We can only make the basic data cleaning scripts available here as the child audio datasets used in this paper are subject to licensing agreements. For access to respectively cleaner versions of datasets used in this paper, researchers can buy their own license for the original datasets (where required), and on providing proof of that license, can get access to our ‘clean’ versions upon request.
+
 ## Table of Results with Checkpoints
 
 ### Table 2: WER for different Whisper models on child speech (MyST, PFSTAR and CMU-Kids) and adult speech (dev-clean) datasets
@@ -28,8 +32,6 @@ Automatic Speech Recognition (ASR) systems often struggle with transcribing spee
 **NOTE1:** Model IDs are links to the corresponding models on our HuggingFace page. The models are openly available.<br />
 
 **NOTE2:** A Tensorboard page of all the training and evaluation metrics for each model can be found under the "Training metrics" tab after clicking on a model link.<br />
-
-**DISCLAIMER:** We can only make the basic data cleaning scripts available here as the child audio datasets used in this paper are subject to licensing agreements. For access to respectively cleaner versions of datasets used in this paper, researchers can buy their own license for the original datasets (where required), and on providing proof of that license, can get access to our ‘clean’ versions upon request.
 
 | **Model ID**   | **Whisper Pretraining Model** | **WER MyST_test** | **WER PFS_test** | **WER CMU_test** | **WER dev-clean** |
 | :---    | :------: | :------: | :------: | :------: | :------: |
