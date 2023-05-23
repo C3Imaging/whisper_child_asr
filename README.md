@@ -1,4 +1,4 @@
-# Experimental analysis using Whisper large scale supervision to improve the child ASR.
+# Adaptation of Whisper models to child speech recognition
 
 ## Abstract
 
